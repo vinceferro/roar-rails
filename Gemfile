@@ -4,7 +4,8 @@ source "http://rubygems.org"
 gemspec
 
 group :test do
-  # gem 'roar', path: "../roar" #">= 0.11.17"
-  #gem 'representable', path: "../representable"
+  #gem 'roar', :github => 'apotonick/roar', :branch => 'master'
+  #gem 'multi_json'
+  #gem 'representable'
   gem 'rake', '10.1.0'
 end
