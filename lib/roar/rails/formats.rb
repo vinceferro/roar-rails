@@ -62,6 +62,7 @@ module Roar::Rails
     def detect_collection(model)
       return true if model.kind_of?(Array)
       return true if Object.const_defined?("ActiveRecord") and model.kind_of?(ActiveRecord::Relation)
+      return true if Object.const_defined?("Cequel") and model.kind_of?(Cequel::Record::RecordSet)
     end
 
     class Path < String

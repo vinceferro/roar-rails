@@ -49,7 +49,6 @@ module Roar
         end
       end
 
-
       module PrepareModel
         def prepare_model_for(format, model, options) # overwritten in VersionStrategy/3.0.
           controller.prepare_model_for(format, model, options)
